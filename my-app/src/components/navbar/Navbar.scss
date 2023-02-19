@@ -1,0 +1,30 @@
+@import "../../scss/variable";
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+.container{
+    font-family: 'Permanent Marker', cursive;
+    font-weight:bolder;
+    color: black;
+    display: flex;
+    background-color: $myOrange;
+    .navLinks{
+        display: flex;      
+        width: 100%;
+        justify-content: end;
+        .Links{
+            
+            margin-left: 16px;
+            padding-top: 44px;
+
+            
+
+            a{
+                padding: 16px;
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
