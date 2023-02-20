@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div className='mainContainer'>
       <Card data= {data}/> 
-      main  (cards)
+    
     </div>
   )
 }

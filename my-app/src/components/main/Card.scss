@@ -1,1 +1,101 @@
 @import "../../scss/variable";
+.cardContainer{
+   margin-bottom: 32px;
+    background-color: $myRed2;
+.row {
+        margin-bottom: 32px;
+        opacity: 0.7;
+        background-color: $myRed2;
+        transition: 2s;
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+        gap: 2rem;
+        
+        &:hover{
+            opacity: 1;
+        }
+
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        
+
+
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                
+                margin-top: 16px;
+                padding: 16px;
+                text-align: center;
+                height: 400px;
+                position: relative;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+                border-radius: 5px;
+                
+                &:hover p {
+                    opacity: 1;
+                    display: block;
+                    
+                }
+
+                p {
+                    display: none;
+                    color: white;
+                    background-color: black;
+                    opacity: 0.7;
+                    position: absolute;
+                    top: 60%;
+                    left: 50%;
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -40%);
+                    width: 100%;
+                    transition: opacity 1s ease-out;
+                    opacity: 0;
+                    
+
+                }
+
+                h3 {
+                    opacity: 1;
+                    color: $myYellow1;
+                    background-color: $myRed1;
+                    display: inline-block;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+
+                }
+
+            }
+
+
+        
+
+    }
+
+$breakpoint-tablet: 768px;
+$breakpoint-tablet2: 1200px;
+
+@media (max-width: $breakpoint-tablet) {
+        .row {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+
+@media (max-width: $breakpoint-tablet2) {
+    .row {
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+}  

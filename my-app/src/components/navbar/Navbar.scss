@@ -5,7 +5,7 @@
 .container{
     font-family: 'Permanent Marker', cursive;
     font-weight:bolder;
-    color: black;
+    
     display: flex;
     background-color: $myOrange;
     .navLinks{
@@ -16,14 +16,24 @@
             
             margin-left: 16px;
             padding-top: 44px;
-
+            
+            
+                
+            }
             
 
             a{
-                padding: 16px;
+                padding: 8px;
                 font-size: 1.5rem;
                 text-decoration: none;
-                color: black;
+                color: $myRed1;
+                
+                margin: 8px;
+                
+                &:hover {
+                    background-color: $myYellow2;
+                
+                
             }
         }
     }

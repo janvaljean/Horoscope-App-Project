@@ -1,5 +1,32 @@
 @import "../../scss/variable";
 
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+
 .mainContainer{
     text-align: center;
-}
+    color: $myYellow2;
+    margin-top: 8px;
+    padding-top: 8px;
+    margin-bottom: 16px;
+    
+    h2{
+            display: inline-block;
+            text-shadow: 3px 3px $myRed1;
+            font-size: 48px;
+            color: $myYellow2;
+            text-align: center;
+            animation: fadeIn 1s infinite alternate;
+        }
+    
+        }
+        
+        
+    
+        
+    

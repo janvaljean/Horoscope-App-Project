@@ -5,14 +5,17 @@ const Card = ({data}) => {
     <div className='cardContainer'>
       {data.map(({id, title, desc, image}) => {
         return(
-            
-            <div key={id} className='card' style="width: 18rem;">
-                <img src={image} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                  <h3>{title}</h3>
-                  <p className="card-text">{desc}</p>
-                </div>
+          <div key={id} className='row'>
+            <div className="column">
+              <div key={id} className='card' style={{ backgroundImage: `url(${image})` ,
+                  backgroundSize: 'cover',
+                  width:'100%' }}>
+                <h3>{title}</h3>
+                <p className="card-text">{desc}</p>
+               </div>
+             </div>
             </div>
+  
         )
 
       }   
